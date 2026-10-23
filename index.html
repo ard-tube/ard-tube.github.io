@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gökhan Arda Borulu — Developer Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Gökhan Arda Borulu — Aspiring Computer Science student, creator of Twilight OS, Python developer, and open-source contributor.">
+    <meta name="keywords" content="Gökhan Arda Borulu, Arda, Developer, Python, Linux, Twilight OS, Arch Linux, Portfolio, University of Waterloo">
+    <meta name="author" content="Gökhan Arda Borulu">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ard-tube.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ard-tube.github.io/">
+    <meta property="og:title" content="Gökhan Arda Borulu — Developer Portfolio">
+    <meta property="og:description" content="Aspiring CS student, creator of Twilight OS (custom Arch Linux distro), Python developer, and open-source enthusiast.">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gökhan Arda Borulu — Developer Portfolio">
+    <meta name="twitter:description" content="Aspiring CS student, Twilight OS creator, Python developer.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand" id="brandLogo">
+                <span class="brand-icon">⚡</span>
+                <span class="brand-name">Arda<span class="brand-accent">.dev</span></span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#journey" class="nav-item">Journey</a>
+                <a href="#contact" class="nav-item">Contact</a>
+                <a href="https://github.com/ard-tube" target="_blank" rel="noopener" class="nav-item github-nav-link">
+                    <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to opportunities · University Applications 2027
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Arda</span>
+                <span class="hero-wave" aria-hidden="true">👋</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typewriter" id="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+            </p>
+            <p class="hero-desc">
+                Grade 11 student passionate about <strong>Linux systems</strong>, <strong>Python development</strong>,
+                and <strong>open-source software</strong>. Creator of <a href="https://github.com/ard-tube/twilight-os" target="_blank">Twilight OS</a>,
+                a custom Arch Linux distribution with KDE Plasma 6.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary" id="heroProjectsBtn">
+                    <span>View Projects</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06z"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="https://github.com/ard-tube" target="_blank" class="btn btn-ghost">
+                    <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                </a>
+            </div>
+
+            <!-- Stats Ribbon -->
+            <div class="stats-ribbon">
+                <div class="stat-item">
+                    <span class="stat-value" id="statProjects">3+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value" id="statLanguages">5+</span>
+                    <span class="stat-label">Languages</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value" id="statCommits">—</span>
+                    <span class="stat-label">Commits</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value">2027</span>
+                    <span class="stat-label">Uni Target</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead">
+                        I'm <strong>Gökhan Arda Borulu</strong>, a 17-year-old Grade 11 student with a deep passion for technology,
+                        Linux systems, and software development.
+                    </p>
+                    <p>
+                        While still in high school, I built <strong>Twilight OS</strong> — a complete Arch Linux-based operating system
+                        with KDE Plasma 6, universal GPU support, and 50 curated applications. This project taught me
+                        everything from shell scripting to CI/CD pipelines with GitHub Actions.
+                    </p>
+                    <p>
+                        I'm actively learning <strong>Python</strong> from basics to advanced topics like OOP, GUI development,
+                        web scraping, and database management. My goal is to study <strong>Computer Science or Software Engineering</strong>
+                        at the <strong>University of Waterloo</strong> 🇨🇦 and contribute to the open-source community.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎓</span>
+                            <div>
+                                <strong>Education</strong>
+                                <span>Grade 11 · High School</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎯</span>
+                            <div>
+                                <strong>Dream School</strong>
+                                <span>University of Waterloo</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🌍</span>
+                            <div>
+                                <strong>Languages</strong>
+                                <span>Turkish (Native) · English</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💻</span>
+                            <div>
+                                <strong>Focus</strong>
+                                <span>Linux · Python · Open Source</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card-stack">
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">arda@portfolio ~ $</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="term-prompt">$</span> <span class="term-cmd">whoami</span>
+<span class="term-output">Gökhan Arda Borulu</span>
+
+<span class="term-prompt">$</span> <span class="term-cmd">cat education.txt</span>
+<span class="term-output">🎓 Grade 11 High School Student
+🎯 Target: University of Waterloo (CS/SE)
+📅 Applications: 2027</span>
+
+<span class="term-prompt">$</span> <span class="term-cmd">ls ~/projects/</span>
+<span class="term-output">twilight-os/  python-learning/  unreal-engine/</span>
+
+<span class="term-prompt">$</span> <span class="term-cmd">neofetch --ascii</span>
+<span class="term-output">   .---.          Arda@Portfolio
+  /     \         ──────────────
+ |  /\   \       OS: Twilight OS x86_64
+ |  \ \   \      DE: KDE Plasma 6
+  \  '-'--'      Skills: Python, Bash, JS
+  ~~~~~~~~       Editor: VS Code
+  TWILIGHT OS    Status: Learning 🚀</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2>Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🔤</span> Programming Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="intermediate">Python</span>
+                        <span class="skill-tag" data-level="intermediate">Bash / Shell</span>
+                        <span class="skill-tag" data-level="beginner">JavaScript</span>
+                        <span class="skill-tag" data-level="intermediate">HTML / CSS</span>
+                        <span class="skill-tag" data-level="beginner">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🐧</span> Linux & Systems
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">Arch Linux</span>
+                        <span class="skill-tag" data-level="advanced">KDE Plasma</span>
+                        <span class="skill-tag" data-level="intermediate">Archiso</span>
+                        <span class="skill-tag" data-level="intermediate">Systemd</span>
+                        <span class="skill-tag" data-level="intermediate">Pacman</span>
+                        <span class="skill-tag" data-level="beginner">Docker</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🛠️</span> Tools & DevOps
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="intermediate">Git / GitHub</span>
+                        <span class="skill-tag" data-level="intermediate">GitHub Actions CI/CD</span>
+                        <span class="skill-tag" data-level="intermediate">VS Code</span>
+                        <span class="skill-tag" data-level="beginner">Vim / Neovim</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">📚</span> Python Libraries
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="intermediate">PyQt5</span>
+                        <span class="skill-tag" data-level="intermediate">SQLite3</span>
+                        <span class="skill-tag" data-level="beginner">Requests</span>
+                        <span class="skill-tag" data-level="beginner">BeautifulSoup</span>
+                        <span class="skill-tag" data-level="beginner">Pillow</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🎮</span> Game Dev & Creative
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="beginner">Unreal Engine 5</span>
+                        <span class="skill-tag" data-level="beginner">Blender 3D</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-legend">
+                <span class="legend-item"><span class="legend-dot" data-level="advanced"></span> Confident</span>
+                <span class="legend-item"><span class="legend-dot" data-level="intermediate"></span> Comfortable</span>
+                <span class="legend-item"><span class="legend-dot" data-level="beginner"></span> Learning</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Twilight OS -->
+                <div class="project-card project-card-featured">
+                    <div class="project-card-header">
+                        <div class="project-icon">🌌</div>
+                        <div class="project-links">
+                            <a href="https://github.com/ard-tube/twilight-os" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
+                                <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                            </a>
+                            <a href="https://ard-tube.github.io/twilight-os/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M4.75 3.5a.75.75 0 0 0-.75.75v7.5c0 .414.336.75.75.75h6.5a.75.75 0 0 0 .75-.75v-3a.75.75 0 0 1 1.5 0v3A2.25 2.25 0 0 1 11.25 14h-6.5A2.25 2.25 0 0 1 2.5 11.75v-7.5A2.25 2.25 0 0 1 4.75 2h3a.75.75 0 0 1 0 1.5h-3Zm5-1h3.5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0V4.56L8.78 8.28a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.72-3.72H9.75a.75.75 0 0 1 0-1.5Z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <span class="project-badge">Featured Project</span>
+                    <h3 class="project-title">Twilight OS</h3>
+                    <p class="project-desc">
+                        A complete, custom Arch Linux distribution built from scratch with KDE Plasma 6 (Wayland), universal NVIDIA/AMD/Intel GPU drivers, dual GUI + CLI installers, 50 curated desktop applications, and automated ISO builds via GitHub Actions.
+                    </p>
+                    <div class="project-tech">
+                        <span>Arch Linux</span>
+                        <span>Bash</span>
+                        <span>Archiso</span>
+                        <span>KDE Plasma</span>
+                        <span>GitHub Actions</span>
+                        <span>HTML/CSS/JS</span>
+                    </div>
+                </div>
+
+                <!-- Python Learning -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">🐍</div>
+                        <div class="project-links">
+                            <a href="https://github.com/ard-tube/python-learning" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
+                                <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Python Learning Journey</h3>
+                    <p class="project-desc">
+                        A comprehensive collection of Python exercises from zero to advanced — including OOP, PyQt5 GUI apps, SQLite databases, web scraping with BeautifulSoup, decorators, and API interactions.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>PyQt5</span>
+                        <span>SQLite</span>
+                        <span>BeautifulSoup</span>
+                        <span>Requests</span>
+                    </div>
+                </div>
+
+                <!-- Unreal Engine -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">🎮</div>
+                        <div class="project-links"></div>
+                    </div>
+                    <span class="project-badge project-badge-wip">In Progress</span>
+                    <h3 class="project-title">Unreal Engine Projects</h3>
+                    <p class="project-desc">
+                        Exploring 3D game development with Unreal Engine 5 — building game environments, learning Blueprints, and experimenting with level design and city-building mechanics.
+                    </p>
+                    <div class="project-tech">
+                        <span>Unreal Engine 5</span>
+                        <span>Blueprints</span>
+                        <span>3D Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Journey Timeline -->
+    <section class="section journey-section" id="journey">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2>My Journey</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Started Learning Programming</h3>
+                        <p>Began my programming journey with Python — learning basics like variables, loops, conditionals, and functions through online courses.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>Discovered Linux & Open Source</h3>
+                        <p>Installed Arch Linux for the first time, learned package management, shell scripting, and fell in love with the KDE Plasma desktop environment.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Early 2026</span>
+                        <h3>Built Twilight OS</h3>
+                        <p>Created a complete Arch Linux distribution from scratch using archiso — with custom theming, GPU drivers, dual installers, and a curated app suite. Set up CI/CD with GitHub Actions for automated ISO builds.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mid 2026</span>
+                        <h3>Advanced Python & GUI Development</h3>
+                        <p>Progressed to OOP, PyQt5 desktop apps, SQLite databases, web scraping, decorators, and generators. Built real projects including a notepad editor and library management system.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Now — October 2026</span>
+                        <h3>Building My Portfolio</h3>
+                        <p>Organizing my work, creating this portfolio site, and preparing for university applications to the University of Waterloo Computer Science / Software Engineering program.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot future"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2027 →</span>
+                        <h3>University & Beyond</h3>
+                        <p>Apply to University of Waterloo, continue open-source contributions, release Twilight OS v1.0, and explore data science, machine learning, and systems programming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05</span>
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-card">
+                <p class="contact-desc">
+                    I'm always excited to connect with fellow developers, open-source enthusiasts, and university admissions officers.
+                    Whether you have a question about Twilight OS, want to collaborate on a project, or just want to say hi — feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:ardaborulu16@gmail.com" class="contact-link" id="contactEmail">
+                        <span class="contact-link-icon">📧</span>
+                        <span class="contact-link-label">Email</span>
+                        <span class="contact-link-value">ardaborulu16@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/ard-tube" target="_blank" rel="noopener" class="contact-link" id="contactGithub">
+                        <span class="contact-link-icon">
+                            <svg height="22" width="22" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                        </span>
+                        <span class="contact-link-label">GitHub</span>
+                        <span class="contact-link-value">github.com/ard-tube</span>
+                    </a>
+                    <a href="https://ard-tube.github.io/twilight-os/" target="_blank" rel="noopener" class="contact-link" id="contactPortfolio">
+                        <span class="contact-link-icon">🌐</span>
+                        <span class="contact-link-label">Twilight OS</span>
+                        <span class="contact-link-value">ard-tube.github.io/twilight-os</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="brand-icon">⚡</span>
+                <span>Designed & built by <strong>Gökhan Arda Borulu</strong></span>
+            </div>
+            <div class="footer-right">
+                <span>© 2026 · All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
